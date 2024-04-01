@@ -1,0 +1,19 @@
+<div class="group" style="width: 200px; position: relative">
+@if (editable || loading()) {
+    <input style="width: 100%" type="text" [(ngModel)]="editValue" [disabled]="loading()">
+    <div class="button-group" style="position: absolute; left: 100%; bottom: 0; display: flex">
+      @if (loading()) {
+        <div>Loading...</div>
+      } @else {
+        <button type="button" (click)="save()">Save</button>
+        <button type="button" (click)="cancel()">Cancel</button>
+      }
+    </div>
+} @else {
+    <span style="width: 100%">{{ value() }}</span>
+    <div class="button-group" style="position: absolute; left: 100%; bottom: 0">
+      <button type="button" (click)="edit()">Edit</button>
+      <button type="button" (click)="remove()">Remove</button>
+    </div>
+}
+</div>

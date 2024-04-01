@@ -1,3 +1,4 @@
 <a routerLink="/">Home</a>
 <a routerLink="/about">About</a>
 <router-outlet />
+<app-input-toggle [value]="textValue" [loading]="loading" (onSave)="saveText($event)"></app-input-toggle>

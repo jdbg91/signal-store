@@ -1,6 +1,5 @@
 import {inject, Injectable} from "@angular/core";
-import {HttpClient} from "@angular/common/http";
-import {delay, Observable, throwError} from "rxjs";
+import {Observable, throwError} from "rxjs";
 import {ApiRequest, HttpService} from "./http.service";
 
 @Injectable({

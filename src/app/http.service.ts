@@ -1,7 +1,6 @@
 import {inject, Injectable} from "@angular/core";
-import {finalize, map, noop, Observable, scan, startWith} from "rxjs";
+import {finalize, map, Observable, scan, startWith} from "rxjs";
 import {HttpClient} from "@angular/common/http";
-import {takeUntilDestroyed} from "@angular/core/rxjs-interop";
 
 @Injectable({
   providedIn: 'root',
