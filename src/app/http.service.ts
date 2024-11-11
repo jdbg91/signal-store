@@ -1,6 +1,6 @@
 import {inject, Injectable} from "@angular/core";
 import {finalize, map, Observable, scan, startWith} from "rxjs";
-import {HttpClient} from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 
 @Injectable({
   providedIn: 'root',
